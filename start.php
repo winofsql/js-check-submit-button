@@ -1,5 +1,5 @@
-<?php 
-$view_head_height = 100
+<?php
+$view_head_height = 200
 
 ?>
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ $view_head_height = 100
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
 
 <?php require_once("iframe-css.php") ?>
-  
+
 <script>
 var sendButton = 0;  // クリックされたボタン番号をセット
 function checkForm() {
@@ -26,12 +26,13 @@ function checkForm() {
   return true;
 }
 </script>
-  
+
 </head>
 <body>
+<div id="main">
 <h1 class="alert alert-primary">FORM 送信時、クリックしたボタンを判断する</h1>
 
-<div id="main" class="m-4">
+<div class="m-4">
 
   <form
       onsubmit="return checkForm();"
@@ -44,7 +45,7 @@ function checkForm() {
       value="送信1"
       onclick="sendButton=1"
       class="btn btn-primary">
-    
+
     <input
       type="submit"
       name="send"
@@ -54,6 +55,7 @@ function checkForm() {
 
   </form>
 
+</div>
 </div>
 
 <iframe id="extend" src="about:blank" name="myframe"></iframe>
