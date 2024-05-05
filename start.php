@@ -54,8 +54,6 @@ function checkForm() {
 
   </form>
 
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-
 </div>
 
 <iframe id="extend" src="about:blank" name="myframe"></iframe>
